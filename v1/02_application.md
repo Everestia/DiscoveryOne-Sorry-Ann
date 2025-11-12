@@ -196,8 +196,8 @@ gcloud compute instance-groups set-named-ports mig-$regioneu \
 +=================================================================+
 |                   ! ! ! W A R N I N G ! ! !                     |
 +-----------------------------------------------------------------+
-                         These commands will permanently destroy                             
-                                     the compute resources created above.                                                                              
+These commands will permanently destroy
+the resources created in the steps above.
 +=================================================================+
 </pre>
 </div>

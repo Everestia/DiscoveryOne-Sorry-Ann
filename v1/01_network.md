@@ -166,8 +166,8 @@ gcloud compute health-checks create http $healthcheckname --port=80 --check-inte
 +=================================================================+
 |                   ! ! ! W A R N I N G ! ! !                     |
 +-----------------------------------------------------------------+
-                         These commands will permanently destroy                             
-                                   the resources created in the steps above.                                                                              
+These commands will permanently destroy
+the resources created in the steps above.
 +=================================================================+
 </pre>
 </div>
