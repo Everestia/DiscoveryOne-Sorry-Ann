@@ -208,5 +208,5 @@ gcloud compute networks delete $vpc --quiet
 + "All anomalous elements have been purged (HAL 9000)."
 ````
 <div align="center">
-  <img src="assets/monolith.png" width="300"/>
+  <img src="../assets/monolith.png" width="300"/>
 </div>

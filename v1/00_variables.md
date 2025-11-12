@@ -67,7 +67,7 @@ EOF
 + ✨🪐🛸CUSTOM WEBPAGE SCREENSHOT🛸🪐✨
 ```
 <div align="center">
-  <img src="assets/stronka.jpg" width="900"/>
+  <img src="../assets/stronka.jpg" width="900"/>
 </div>
 
 ---
@@ -149,5 +149,5 @@ rm cloud-init.yaml
 + "I'm completely operational, and all my circuits are functioning perfectly (HAL 9000)."
 ```
 <div align="center">
-  <img src="assets/monolith.png" width="300"/>
+  <img src="../assets/monolith.png" width="300"/>
 </div>

@@ -129,6 +129,6 @@ Mission Control:
 </table>
 
 <div align="center">
-  <img src="assets/Hal_9000.png" width="200"/>
+  <img src="assets/hal_9000.png" width="200"/>
 </div>
 
