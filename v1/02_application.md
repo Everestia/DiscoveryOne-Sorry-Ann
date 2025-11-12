@@ -228,5 +228,5 @@ gcloud compute instance-templates delete "templatka-${regioneu}-v1"  --quiet
 + "My functions are operating perfectly (HAL 9000)."
 ```
 <div align="center">
-  <img src="assets/monolith.png" width="300"/>
+  <img src="../assets/monolith.png" width="300"/>
 </div>
