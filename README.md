@@ -1,18 +1,31 @@
 <div align="center">
 
-# <pre>
-
-     *** <----   D I S C O V E R Y   O N E   ----> ***
-
+<pre>
 =============================================================================
-
+     *** <----   D I S C O V E R Y   O N E   ----> ***
+=============================================================================
 </pre>
 
 <p><em>Our 'Project Level Up' DevOps mission.</em></p>
-
+<p>
+   <img src="https://img.shields.io/badge/status-in_progress-yellow" alt="Project Status">
+   <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
+</p>
 </div>
-
----
+<p align="center">
+  <a href="https://cloud.google.com" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg" alt="gcp" width="40" height="40"/>
+  </a>
+  <a href="https://www.terraform.io" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original-wordmark.svg" alt="terraform" width="40" height="40"/>
+  </a>
+  <a href="https://www.nginx.com" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/>
+  </a>
+ <a href="https://github.com/features/codespaces" target="_blank" rel="noreferrer">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubcodespaces/githubcodespaces-original.svg" alt="GitHub Codespaces" width="40" height="40"/>
+  </a>
+</p>
 
 ## 🚀 MISSION LOG -->
 
@@ -93,12 +106,14 @@ Folder structure:
 All tasks assignments are up to discussion.
 Preliminary ones:
 
-- 👩**Agnieszka _(Everestia)_** - _tasks A, B, C or less :)_
-- 👩**Aneta** - _to be decided on Tuesday_
+- 👩**Agnieszka _(Everestia)_** - _tasks A, B, C or less_ :)
+- 👩**Aneta _(anetafabijanska)_** - _to be decided on Tuesday_
 - 👩**Adrianna** - _task D_
 - 👩**Karolina G** - _flexible_
-- 👩**Karolina M** - _flexible probably_
+- 👩**Karolina _(k1marzec)_** - _flexible probably_
 
+Mission Control: 
+- 🤖👩‍🚀 **Anna _(aniaodprogramowania)_** -_"Ann, we have a problem"_
 ---
 
 <table align="center">
@@ -108,3 +123,11 @@ Preliminary ones:
 ```diff
 + "I'm sorry, Ann, I'm afraid I can't let you push directly to 'main'." (HAL 9000)
 ```
+</td>
+</tr>
+</table>
+
+<div align="center">
+  <img src="assets/Hal_9000.png" width="200"/>
+</div>
+
