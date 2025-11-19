@@ -30,10 +30,10 @@ The following command creates a `cloud-init.yaml` file in our directory. This fi
 #Cloud-init config
 cat << 'EOF' > "cloud-init.yaml"
 #cloud-config
-# version: 1.1.6  (2025-11-11)
+# version: 1.2.0  (2025-11-20)
 # owner: Sati
-# change: switch permissions, add sed, runcmd in single line
-# scope: update package list, install nginx, set as service and configure webpage
+# change: team rooster updated after HAL rampage
+# scope: -
 package_update: true
 packages:
   - nginx
