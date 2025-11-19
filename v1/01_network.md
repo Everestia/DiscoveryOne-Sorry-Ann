@@ -130,7 +130,7 @@ gcloud compute firewall-rules create ${vpc}-allow-lb-health-checks \
     --description="Allows traffic from Google Cloud health checking systems over port 80" \
     --direction=INGRESS \
     --source-ranges=130.211.0.0/22,35.191.0.0/16 \
-T   --action=ALLOW \
+    --action=ALLOW \
     --rules=tcp:80 \
     --target-tags=$healthchecktag
 
