@@ -48,8 +48,8 @@ write_files:
           <h2>Zyczymy owocnego zwiedzania &lt;3 </h2>
           <p><strong>VM Hostname:</strong> ##MY_HOSTNAME##</p>
           <p><strong>VM IP Address:</strong> ##MY_IP_ADDRESS##</p>
-          <p><strong>Application Version:</strong> v3 </p>
-          <p>Pozdrawiamy: Agnieszka, Adrianna, Aneta, Karolina i Karolina </p>
+          <p><strong>Application Version:</strong> v4 </p>
+          <p>Pozdrawiamy: Agnieszka i Adrianna </p>
         </body>
       </html>
 runcmd:
