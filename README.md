@@ -107,11 +107,11 @@ Folder structure:
 All tasks assignments are up to discussion.
 Preliminary ones:
 
-- 👩**Agnieszka _(Everestia)_** - _tasks A, B, C or less_ :)
-- 👩**Aneta _(anetafabijanska)_** - _to be decided on Tuesday_
+- 👩**Agnieszka _(Everestia)_** - _tasks A, B, C, E_
+- 👩**Aneta** - _second Hal 9000 victim_☠️
 - 👩**Adrianna** - _task D_
-- 👩**Karolina G** - _flexible_
-- 👩**Karolina _(k1marzec)_** - _flexible probably_
+- 👩**Karolina G** - _Hal 9000 survivor (escape pod)_💚
+- 👩**Karolina** - _first Hal 9000 victim_☠️
 
 Mission Control: 
 - 🤖👩‍🚀 **Anna _(aniaodprogramowania)_** -_"Ann, we have a problem"_
