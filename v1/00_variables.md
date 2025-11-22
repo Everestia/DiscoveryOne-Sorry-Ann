@@ -60,6 +60,15 @@ runcmd:
     sed -i "s/##MY_HOSTNAME##/$HNAME/g" /var/www/html/index.html
     sed -i "s/##MY_IP_ADDRESS##/$IP_ADDR/g" /var/www/html/index.html
     systemctl enable --now nginx
+
+# version: 1.1.6  (2025-11-22)
+# owner: Adrianna
+    # -------------------------------------------------------
+    # Install Google Ops Agent (for Monitoring + Logging)
+    # -------------------------------------------------------
+    curl -sSO https://dl.google.com/cloudagents/add-google-ops-agent-repo.sh
+    sudo bash add-google-ops-agent-repo.sh --also-install
+    sudo systemctl restart google-cloud-ops-agent
 EOF
 
 ```
