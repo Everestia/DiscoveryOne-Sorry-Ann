@@ -44,16 +44,16 @@ Create the US Instance Template.
 ## US side
 #Create Instance Template
 gcloud compute instance-templates create "templatka-${regionus}-v1" \
-  --network="${vpc}" \
-  --region="${regionus}" \
-  --subnet="${vpc}-backend-${subnetus}" \
-  --machine-type="e2-micro" \
-  --tags="${healthchecktag}" \
-  --metadata-from-file="user-data=cloud-init.yaml" \
-  --create-disk="auto-delete=yes,boot=yes,device-name=persistent-disk-0,image=projects/ubuntu-os-cloud/global/images/ubuntu-minimal-2404-noble-amd64-v20251020,mode=rw,size=10,type=pd-balanced" \
-  --shielded-secure-boot \
-  --shielded-vtpm \
-  --shielded-integrity-monitoring
+  --network="${vpc}" \
+  --region="${regionus}" \
+  --subnet="${vpc}-backend-${subnetus}" \
+  --machine-type="e2-micro" \
+  --tags="${healthchecktag}" \
+  --metadata-from-file=user-data=cloud-init.yaml,startup-script=ops-agent-startup.sh \
+  --create-disk=auto-delete=yes,boot=yes,device-name=persistent-disk-0,image=projects/ubuntu-os-cloud/global/images/ubuntu-minimal-2404-noble-amd64-v20251020,mode=rw,size=10,type=pd-balanced \
+  --shielded-secure-boot \
+  --shielded-vtpm \
+  --shielded-integrity-monitoring
 
 ```
 ---
@@ -135,16 +135,17 @@ Create the EU Instance Template.
 ## EU side
 #Create Instance Template
 gcloud compute instance-templates create "templatka-${regioneu}-v1" \
-  --network="${vpc}" \
-  --region="${regioneu}" \
-  --subnet="${vpc}-backend-${subneteu}" \
-  --machine-type="e2-micro" \
-  --tags="${healthchecktag}" \
-  --metadata-from-file="user-data=cloud-init.yaml" \
-  --create-disk="auto-delete=yes,boot=yes,device-name=persistent-disk-0,image=projects/ubuntu-os-cloud/global/images/ubuntu-minimal-2404-noble-amd64-v20251020,mode=rw,size=10,type=pd-balanced" \
-  --shielded-secure-boot \
-  --shielded-vtpm \
-  --shielded-integrity-monitoring
+  --network="${vpc}" \
+  --region="${regioneu}" \
+  --subnet="${vpc}-backend-${subneteu}" \
+  --machine-type="e2-micro" \
+  --tags="${healthchecktag}" \
+  --metadata-from-file=user-data=cloud-init.yaml,startup-script=ops-agent-startup.sh \
+  --create-disk=auto-delete=yes,boot=yes,device-name=persistent-disk-0,image=projects/ubuntu-os-cloud/global/images/ubuntu-minimal-2404-noble-amd64-v20251020,mode=rw,size=10,type=pd-balanced \
+  --shielded-secure-boot \
+  --shielded-vtpm \
+  --shielded-integrity-monitoring
+
 
 ```
 **Action b:**

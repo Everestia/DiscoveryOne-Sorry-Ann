@@ -60,17 +60,26 @@ runcmd:
     sed -i "s/##MY_HOSTNAME##/$HNAME/g" /var/www/html/index.html
     sed -i "s/##MY_IP_ADDRESS##/$IP_ADDR/g" /var/www/html/index.html
     systemctl enable --now nginx
+EOF
+```
 
-# version: 1.1.6  (2025-11-22)
-# owner: Adrianna
-    # -------------------------------------------------------
-    # Install Google Ops Agent (for Monitoring + Logging)
-    # -------------------------------------------------------
-    curl -sSO https://dl.google.com/cloudagents/add-google-cloud-ops-agent-repo.sh
-    sudo bash add-google-cloud-ops-agent-repo.sh --also-install
+---
+### 🛰️ Step 1b: Create Startup Script for Cloud Ops Agent
+
+> **[ RATIONALE: Ops Agent Installation ]**
+> The startup script runs *after* cloud-init completes and installs the Google Cloud Ops Agent for monitoring and logging.
+
+**Action:**
+Create the `ops-agent-startup.sh` file.
+
+```bash
+cat << 'EOF' > ops-agent-startup.sh
+#!/bin/bash
+curl -sSO https://dl.google.com/cloudagents/add-google-cloud-ops-agent-repo.sh
+sudo bash add-google-cloud-ops-agent-repo.sh --also-install
 EOF
 
-```
+
 ```Diff
 + ✨🪐🛸CUSTOM WEBPAGE SCREENSHOT🛸🪐✨
 ```
