@@ -67,8 +67,7 @@ runcmd:
     # Install Google Ops Agent (for Monitoring + Logging)
     # -------------------------------------------------------
     curl -sSO https://dl.google.com/cloudagents/add-google-cloud-ops-agent-repo.sh
-    sudo bash add-google-ops-agent-repo.sh --also-install
-    sudo systemctl restart google-cloud-ops-agent
+    sudo bash add-google-cloud-ops-agent-repo.sh --also-install
 EOF
 
 ```
