@@ -71,14 +71,11 @@ EOF
 #Cloud-init config
 cat << 'EOF' > "cloud-init.yaml"
 #cloud-config
-# version: 2.0.1  (2025-11-23)
+# version: 2.0.2  (2025-11-23)
 # owner: Sati
 # change: Space, animations, starships, fixed encoding!
-
-package_update: true
 packages:
   - nginx
-
 write_files:
   - path: /var/www/html/index.html
     owner: www-data:www-data
@@ -91,7 +88,6 @@ write_files:
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mission Status</title>
         <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-        
         <style>
           :root {
             --primary-color: #64ffda;
@@ -100,7 +96,6 @@ write_files:
             --panel-bg: rgba(17, 34, 64, 0.95);
             --grid-line-color: rgba(100, 255, 218, 0.03);
           }
-
           body {
             margin: 0; padding: 20px; min-height: 100vh; box-sizing: border-box;
             display: flex; justify-content: center; align-items: center;
@@ -114,7 +109,6 @@ write_files:
             overflow: hidden;
             position: relative;
           }
-
           /* --- FIXED 90s SPACESHIP --- */
           .retro-spaceship {
             position: absolute;
@@ -130,7 +124,6 @@ write_files:
             opacity: 0.8;
             animation: retroFlyBy 15s linear infinite;
           }
-
           @keyframes retroFlyBy {
             0% { left: -150px; transform: translateY(0px); }
             25% { transform: translateY(-30px); }
@@ -138,7 +131,6 @@ write_files:
             75% { transform: translateY(30px); }
             100% { left: 110vw; transform: translateY(0px); }
           }
-
           .hud-container {
             position: relative; width: 100%; max-width: 450px; padding: 2rem;
             background: var(--panel-bg); border: 1px solid var(--primary-color);
@@ -146,54 +138,44 @@ write_files:
             clip-path: polygon(0 0, 100% 0, 100% 90%, 92% 100%, 0 100%, 0 8%);
             z-index: 1; 
           }
-
           .hud-container::before {
-            content: "SYS.GOTOWY // V.2.0.1"; 
+            content: "SYS.GOTOWY // V.2.0.2"; 
             position: absolute; top: 5px; right: 10px; font-size: 0.6rem;
             color: var(--primary-color); opacity: 0.6; letter-spacing: 2px;
           }
-
           h1 {
             font-size: 1.3rem; color: #fff; margin: 0 0 0.5rem 0;
             text-transform: uppercase; letter-spacing: 1px;
             border-bottom: 2px solid var(--primary-color); padding-bottom: 15px;
             text-shadow: 0 0 5px rgba(100, 255, 218, 0.5);
           }
-
           h1 b { color: var(--primary-color); }
-
           h2 {
             font-size: 0.9rem; color: var(--secondary-color);
             margin-top: 0; margin-bottom: 2.5rem;
             font-weight: normal; font-style: italic; opacity: 0.8;
           }
-
           .data-row {
             font-size: 0.9rem; margin: 12px 0; display: flex;
             justify-content: space-between; align-items: center;
             border-bottom: 1px dashed rgba(136, 146, 176, 0.3); padding-bottom: 4px;
           }
-
           .data-label {
             color: var(--primary-color); text-transform: uppercase;
             font-size: 0.75rem; letter-spacing: 1px; font-weight: bold;
           }
-
           .data-value { font-weight: bold; letter-spacing: 0.5px; }
-
           .version-tag {
             background: var(--primary-color); color: var(--bg-color);
             padding: 2px 8px; font-weight: bold; border-radius: 2px;
             font-size: 0.8rem; box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
           }
-
           .footer-sig {
             margin-top: 2.5rem; text-align: center; font-size: 0.8rem; opacity: 0.7;
             background: rgba(100, 255, 218, 0.05); padding: 8px;
             border: 1px solid rgba(100, 255, 218, 0.1);
             text-transform: uppercase; letter-spacing: 1px;
           }
-
           @keyframes blink { 50% { opacity: 0; } }
           .cursor-effect::after {
             content: "_"; animation: blink 1s step-start infinite;
@@ -202,14 +184,10 @@ write_files:
         </style>
       </head>
       <body>
-
         <div class="retro-spaceship"></div>
-
         <div class="hud-container">
           <h1 class="cursor-effect"><b>Czesc Ania</b>, witaj w projekcie pierwszym grupy pierwszej.</h1>
-          
           <h2>Życzymy owocnego zwiedzania &lt;3 </h2>
-          
           <div class="data-row">
               <span class="data-label">Nazwa Hosta</span>
               <span class="data-value">##MY_HOSTNAME##</span>
@@ -222,13 +200,10 @@ write_files:
               <span class="data-label">Wersja App</span>
               <span class="data-value version-tag">v2</span>
           </div>
-          
           <p class="footer-sig">Pozdrawiamy: Agnieszka i Adrianna</p>
         </div>
-
       </body>
       </html>
-
 runcmd:
   - |
     #!/bin/bash
@@ -269,7 +244,7 @@ EOF
 + ✨🪐🛸CUSTOM WEBPAGE SCREENSHOT🛸🪐✨
 ```
 
-####BETA:
+#### Beta:
 
 <div align="center">
   <img src="../assets/stronka.jpg" width="900"/>
@@ -277,7 +252,7 @@ EOF
 
 ---
 
-####Final:
+#### Final release:
 
 <div align="center">
   <img src="../assets/stronka-v2.jpg" width="900"/>
