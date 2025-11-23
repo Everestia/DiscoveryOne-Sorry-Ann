@@ -9,7 +9,7 @@
 
 <p><em>Our 'Project Level Up' DevOps mission.</em></p>
 <p>
-   <img src="https://img.shields.io/badge/status-in_progress-yellow" alt="Project Status">
+   <img src="https://img.shields.io/badge/status-completed-green" alt="Project Status">
    <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
 </p>
 </div>
@@ -72,7 +72,7 @@ Our objectives are critical and designed to be fully operational and error-free.
 - Primary task: Implement monitoring and alerts (Task 3, part 1).
 - Dependencies: Requires a functioning infrastructure (MIG, LB) from Person C to monitor.
 
-### 👩‍🚀Person E — Performance & FinOps Analyst **\***
+### 👩‍🚀Person E — Performance & FinOps Analyst \*\*\*\*\*
 
 - Primary task: Conduct load testing (Task 3, part 2) and prepare a cost–performance report (Task 4).
 - Dependencies: Requires a fully operational and monitored system (from Persons C and D) and access to billing data.
@@ -104,17 +104,31 @@ Folder structure:
 
 ## 🗺️ CURRENT ROSTER ---------->
 
-All tasks assignments are up to discussion.
-Preliminary ones:
+All tasks assignments were up to discussion.
 
-- 👩**Agnieszka _(Everestia)_** - _tasks A, B, C, E_
-- 👩**Aneta** - _second Hal 9000 victim_☠️
-- 👩**Adrianna** - _task D_
-- 👩**Karolina G** - _Hal 9000 survivor (escape pod)_💚
-- 👩**Karolina** - _first Hal 9000 victim_☠️
+### **Initial rooster:**
+- 👩‍🚀**Agnieszka _(Everestia)_** - _tasks A, B, C or less_ :)
+- 👩‍🚀**Aneta _(anetafabijanska)_** - _to be decided on Tuesday_
+- 👩‍🚀**Adrianna** - _task D_
+- 👩‍🚀**Karolina G** - _flexible_
+- 👩‍🚀**Karolina _(k1marzec)_** - _flexible probably_
 
-Mission Control: 
-- 🤖👩‍🚀 **Anna _(aniaodprogramowania)_** -_"Ann, we have a problem"_
+
+### **Final tasks - mission completed:**
+- 👩‍🚀**Agnieszka _(Everestia)_** - _tasks A, B, C, E_ 🏆🏅
+- 👩‍🚀**Adrianna** - _task D_ 🏆🏅
+
+
+### **HAL 9000 surviviors:**
+- 👩‍🚀**Karolina G** - _Hal 9000 survivor (escape pod "Stellar")_ 💚
+
+### **HAL 9000 victims:**
+- 👩**Aneta** - _second Hal 9000 victim_ ☠️
+- 👩**Karolina** - _first Hal 9000 victim_ ☠️
+
+
+### **Mission Control:** 
+- 🤖👩‍🚀 **Anna _(aniaodprogramowania)_** -_"Ann, we have a problem!"_
 ---
 
 <table align="center">
