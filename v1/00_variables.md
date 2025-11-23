@@ -251,8 +251,6 @@ EOF
   <img src="../assets/stronka.jpg" width="900"/>
 </div>
 
----
-
 #### Final release:
 
 <div align="center">
