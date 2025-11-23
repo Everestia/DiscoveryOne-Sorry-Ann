@@ -34,7 +34,7 @@ gcloud compute networks create ${vpc} \
 ### 🌐 Step 2: Create Subnets
 > **[ RATIONALE: Network Segmentation ]** 
 > We are provisioning four subnets to create a `multi-region, two-tier architecture (frontend and backend)`.
-> * **Frontend Subnets:** `Intended for public-facing components`, like our Load Balancer and web servers.
+> * **Frontend Subnets:** `Intended for public-facing components`, however, they will not be needed in this version of the project - Global external HTTPS Loadbalancer acts as frontend for us.
 > * **Backend Subnets:** `Intended for internal services` (e.g., databases, microservices) that should not be directly exposed to the internet. This segmentation is fundamental for applying granular firewall rules and securing our application.
 
 **Action:**
@@ -135,12 +135,13 @@ gcloud compute firewall-rules create ${vpc}-allow-lb-health-checks \
     --target-tags=$healthchecktag
 
 ```
-> **💫[!NOTE]💫👩‍🚀👩‍🚀👩‍🚀👩‍🚀👩‍🚀**
+> **💫[!NOTE]💫👩‍🚀 _(Everestia - Third HAL 9000 survivor)_** 👾❤️‍🔥
 ```Diff
 + Operator's Log:
 ```
-> * **TODO-1:** _Test if the open internal-all rule (as seen in Ania's example) is strictly necessary for communication between frontend and backend tiers, or if more granular rules can beapplied_.
+> * **TODO-1:** _Test if the open internal-all rule (as seen in Ania's example) is strictly necessary for communication between frontend and backend tiers, or if more granular rules can beapplied_. <- **🤬💥Done, not required.🤬💥**
 > * **TODO-2:** _Allow unrestricted SSH until I figure something better_.
+> * **TODO-3:** _Clean up front-end subnets (not needed)_.
 ---
 ### ❤️ Step 4: Define Global Health Check
 
@@ -179,7 +180,7 @@ the resources created in the steps above.
 
 **Action:**
 ```Diff
-- Run the following commands to tear down the network infrastructure⚠️.
+- Run the following commands to tear down the network infrastructure ⚠️
 ```
 ```bash
 ### Network

@@ -11,14 +11,13 @@
 </div>
 
 ---
-> **💫[!NOTE]💫👩‍🚀👩‍🚀👩‍🚀**
+> **💫[!NOTE]💫👩‍🚀 _(Adrianna - second HAL 9000 survivor)_** 👾❤️‍🔥
 
 ```Diff
 + Operator's Log:
 ```
 > * This procedure assumes that **previous layers** are already deployed.
 > * GUI steps are documented with screenshots captured from the GCP Console.
-> * More details to be provided by Adrianna
 ---
 
 ### 🛰️ Step 1 : Create Startup Script for Cloud Ops Agent
