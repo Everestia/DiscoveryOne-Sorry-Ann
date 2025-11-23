@@ -74,6 +74,7 @@ cat << 'EOF' > "cloud-init.yaml"
 # version: 2.0.2  (2025-11-23)
 # owner: Sati
 # change: Space, animations, starships, fixed encoding!
+package_update: true
 packages:
   - nginx
 write_files:
