@@ -61,8 +61,8 @@ runcmd:
     sed -i "s/##MY_IP_ADDRESS##/$IP_ADDR/g" /var/www/html/index.html
     systemctl enable --now nginx
 EOF
-
 ```
+---
 ```Diff
 + ✨🪐🛸CUSTOM WEBPAGE SCREENSHOT🛸🪐✨
 ```
