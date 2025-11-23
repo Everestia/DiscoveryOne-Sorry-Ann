@@ -62,24 +62,7 @@ runcmd:
     systemctl enable --now nginx
 EOF
 ```
-
 ---
-### 🛰️ Step 1b: Create Startup Script for Cloud Ops Agent
-
-> **[ RATIONALE: Ops Agent Installation ]**
-> The startup script runs *after* cloud-init completes and installs the Google Cloud Ops Agent for monitoring and logging.
-
-**Action:**
-Create the `ops-agent-startup.sh` file.
-
-```bash
-cat << 'EOF' > ops-agent-startup.sh
-#!/bin/bash
-curl -sSO https://dl.google.com/cloudagents/add-google-cloud-ops-agent-repo.sh
-sudo bash add-google-cloud-ops-agent-repo.sh --also-install
-EOF
-
-
 ```Diff
 + ✨🪐🛸CUSTOM WEBPAGE SCREENSHOT🛸🪐✨
 ```
